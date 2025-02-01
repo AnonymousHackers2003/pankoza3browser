@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!Why are you looking for its source?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Made by pankoza3-pl</title>
+    <style>
+        body {
+            background-color: #1b1b1b;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+            margin: 0;
+        }
+        h1 {
+            font-size: 4em;
+            margin-top: 20vh;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .terminal {
+            background-color: black;
+            color: green;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Made by pankoza3-pl</h1>
+    <p>Browse secretly. Errors can be occur. Can crash for no reason.</p>
+    <div class="terminal">
+        <p>Initializing system... you are using a <span id="system-info"></span> system</p>
+    </div>
+
+    <script>
+        const systemInfo = navigator.platform;
+        document.getElementById('system-info').innerText = systemInfo;
+    </script>
+</body>
+</html>
